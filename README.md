@@ -37,7 +37,7 @@ The main lessons learneded from this project are:
 ### Measurement setup:
 
 <p align="center">
-<img src="./img/Measurement_Setup.png" width="500" height="300"/>
+<img src="./img/Measurement_Setup.png" width="600" height="200"/>
 </p>
    
 ### Measurement results:
@@ -86,7 +86,7 @@ $Urms=\frac{Upp}{2*\sqrt{2}} = 620/2.828 = 219.23V$
 
 Impedance of Cy at 50Hz frequency for Cy=2.2nF:
 
-$Xcy = \frac{1}{2*PI*f*C} = 1.45Mohm$
+$Xcy=\frac{1}{2*PI*f*C} = 1.45Mohm$
 
 Assuming the CY/CY junction is touched with a wet hand (with the body resistance in such a case estimated to be around 30 ohms - more realistic value would be 1kohm), the current flowing through the body can be calculated as follows, under the assumption that Rbody≪Xcy:
 
