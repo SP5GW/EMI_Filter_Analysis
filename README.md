@@ -1,7 +1,7 @@
 # EMI Filter Analysis 
 
 <p align="center">
-<img src="./img/internals_complete.jpg" width="600" height="600"/>
+<img src="./img/internals_complete.jpg" width="600" height="500"/>
 </p>
 
 ## Introduction
@@ -29,8 +29,8 @@ The main lessons learneded from this project are:
 
 <p align="center">
 <img src="./img/internals_interim.jpg" width="400" height="400"/>
-<img src="./img/internals_complete.jpg.jpg" width="400" height="400"/>
-<img src="./img/final_product.jpg" width="600" height="600"/>
+<img src="./img/internals_complete.jpg" width="400" height="400"/>
+<img src="./img/final_product.jpg" width="500" height="500"/>
 </p>
 
 ## References
