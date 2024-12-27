@@ -104,3 +104,5 @@ A current below 1 mA is generally barely perceptible, while currents exceeding 1
 [2] Miniwhip project, https://github.com/SP5GW/MiniWhip_Antenna - Andrzej Mazur, SP5GW
 
 [3] Filtercon EMC Filter application note, https://filtercon.com.pl/sieciowe-filtry-przeciwzakloceniowe-serii-fb1s-i-fb1m-z-elementem-przeciwprzepieciowym/
+
+[4] Przeciwzakłóceniowy filtr sieciowy - DIYaudio.pl
