@@ -26,6 +26,9 @@ The main lessons learneded from this project are:
 
 ### Measurement rig:
 
+<p align="center">
+<img src="./img/measurement_rig.jpg" width="400" height="400"/>
+</p>
 
 ### Measurement setup:
 
@@ -35,29 +38,25 @@ The main lessons learneded from this project are:
    
 ### Measurement results:
 
-1) Differential Mode:
-
-Power Line connected to filter input (as suggested by manufacturer):  
+Differential Mode:Power Line connected to filter input (as suggested by manufacturer):  
 
 <p align="center">
 <img src="./meas/DifferentialMode_forward_input_to_line.png" width="400" height="400"/>
 </p>
 
-Power Line connected to filter output (reversed configuration):   
+Differential Mode:Power Line connected to filter output (reversed configuration):   
 
 <p align="center">
 <img src="./meas/DifferentialMode_reverse_input_to_load.png" width="400" height="400"/>
 </p>
 
-1) Common Mode:
-
-Power Line connected to filter input (as suggested by manufacturer):  
+Common Mode:Power Line connected to filter input (as suggested by manufacturer):  
 
 <p align="center">
 <img src="./meas/CommonMode_forward_input_to_line.png" width="400" height="400"/>
 </p>
 
-Power Line connected to filter output (reversed configuration): 
+Common Mode:Power Line connected to filter output (reversed configuration): 
 <p align="center">
 <img src="./meas/CommonMode_reverse_input_to_load.png" width="400" height="400"/>
 </p>
