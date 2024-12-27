@@ -37,7 +37,7 @@ The main lessons learneded from this project are:
 ### Measurement setup:
 
 <p align="center">
-<img src="./img/Measurement_Setup.png" width="500" height="400"/>
+<img src="./img/Measurement_Setup.png" width="500" height="300"/>
 </p>
    
 ### Measurement results:
@@ -73,13 +73,15 @@ Common Mode:Power Line connected to filter output (reversed configuration):
 <img src="./img/final_product.jpg" width="500" height="500"/>
 </p>
 
-It is important to note that the voltage at the junction of capacitors Cy (when not connected to Earth) is half of the power line voltage. This occurs because C4 and C5 form a voltage divider. As a result, you will measure approximately 219V RMS at this point, which is sufficient to activate a neon test probe. The capacitor values are chosen to ensure that the current flowing through your body when touching this point remains within safe limits (see calculations below). However, to eliminate any risk of exposure to potentially lethal voltages (e.g., if C4C malfunctions and the C4/C5 junction is not grounded), I used a safe, noise-free Earth connection.
+It is important to note that the voltage at the junction of capacitors Cy (when not connected to Earth) is half of the power line voltage. This occurs because C4 and C5 form a voltage divider. As a result, you will measure approximately 219V RMS at this point, which is sufficient to activate a neon test probe. The capacitor values are chosen to ensure that the current flowing through your body when touching this point remains within safe limits (see calculations below). However, to eliminate any risk of exposure to potentially lethal voltages (e.g., if C4 malfunctions and the C4/C5 junction is not grounded), I used a safe, noise-free Earth connection.
 
 
 Power line voltage:
 
 $Up=310V$
+
 $Upp=2*Up=620V$
+
 $Urms=\frac{Upp}{2*\sqrt{2}} = 620/2.828 = 219.23V$
 
 Impedance of Cy at 50Hz frequency for Cy=2.2nF:
@@ -88,7 +90,7 @@ $Xcy = \frac{1}{2*PI*f*C} = 1.45Mohm$
 
 Assuming the CY/CY junction is touched with a wet hand (with the body resistance in such a case estimated to be around 30 ohms - more realistic value would be 1kohm), the current flowing through the body can be calculated as follows, under the assumption that Rbody≪Xcy:
 
-$Irms = \frec{Urms}{Xcy}= \freq{219}{1.45*10^6} = 0.15mA$
+$Irms = \frac{Urms}{Xcy}= \frac{219}{1.45*10^6} = 0.15mA$
 
 Maximum allowed values of capacitors Cy is defined in IEC 60384-14 and in case of consumer electronics can range between: 1-4.7nF.
 
