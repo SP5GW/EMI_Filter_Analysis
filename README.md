@@ -15,7 +15,7 @@ A noise-free ground must comply with all applicable safety regulations. Specific
 
 The main lessons learneded from this project are:
 
-1) Before installing an EMC filter in your setup, try powering your radio from a battery. Compare the interference levels when the radio is battery-powered versus when it is connected to the AC powerline. If the interference levels remain unchanged, it is likely that the noise originates from another source.
+1) Before installing an EMC filter in your setup, try powering your radio from a battery (disconnect it also from PC and other equipment). Compare the interference levels when the radio is battery-powered versus when it is connected to the AC powerline. If the interference levels remain unchanged, it is likely that the noise originates from another source.
 
 2) Installation of the EMC filter in reverse configuration suggested in [1] did not lead to any improved interference surpression in my case - see measurements below. 
 
@@ -24,6 +24,43 @@ The main lessons learneded from this project are:
 
 ## Measurement results
 
+### Measurement rig:
+
+
+### Measurement setup:
+
+1) Differential Mode:
+
+2) Common Mode:
+   
+### Measurement results:
+
+1) Differential Mode:
+
+Power Line connected to filter input (as suggested by manufacturer):  
+
+<p align="center">
+<img src="./meas/DifferentialMode_forward_input_to_line.png" width="400" height="400"/>
+</p>
+
+Power Line connected to filter output (reversed configuration):   
+
+<p align="center">
+<img src="./meas/DifferentialMode_reverse_input_to_load.png" width="400" height="400"/>
+</p>
+
+1) Common Mode:
+
+Power Line connected to filter input (as suggested by manufacturer):  
+
+<p align="center">
+<img src="./meas/CommonMode_forward_input_to_line.png" width="400" height="400"/>
+</p>
+
+Power Line connected to filter output (reversed configuration): 
+<p align="center">
+<img src="./meas/CommonMode_reverse_input_to_load.png" width="400" height="400"/>
+</p>
 
 ## EMC Filter design
 
