@@ -21,13 +21,16 @@ The main lessons learneded from this project are:
 
 ## Device Schematics
 
+<p align="center">
+<img src="./img/EMC_Filter_Schematics.png" width="600" height="600"/>
+</p>
 
 ## Measurement results
 
 ### Measurement rig:
 
 <p align="center">
-<img src="./img/measurement_rig.jpg" width="400" height="400"/>
+<img src="./img/measurement_rig.jpg" width="300" height="400"/>
 </p>
 
 ### Measurement setup:
