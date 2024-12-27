@@ -1,7 +1,7 @@
 # EMI Filter Analysis 
 
 <p align="center">
-<img src="./img/internals_complete.jpg" width="600" height="500"/>
+<img src="./img/internals_complete.jpg" width="400" height="500"/>
 </p>
 
 ## Introduction
@@ -17,7 +17,8 @@ The main lessons learneded from this project are:
 
 1) Before installing an EMC filter in your setup, try powering your radio from a battery (disconnect it also from PC and other equipment). Compare the interference levels when the radio is battery-powered versus when it is connected to the AC powerline. If the interference levels remain unchanged, it is likely that the noise originates from another source.
 
-2) Installation of the EMC filter in reverse configuration suggested in [1] did not lead to any improved interference surpression in my case - see measurements below. 
+2) Installing the EMC filter in the reversed configuration suggested in [1] did not improve interference suppression in my case, as shown in the measurements below. Consequently, the final design uses the filter as recommended by the manufacturer (see the schematic below).
+
 
 ## Device Schematics
 
@@ -30,14 +31,14 @@ The main lessons learneded from this project are:
 ### Measurement rig:
 
 <p align="center">
-<img src="./img/measurement_rig.jpg" width="300" height="400"/>
+<img src="./img/measurement_rig.jpg" width="500" height="400"/>
 </p>
 
 ### Measurement setup:
 
-1) Differential Mode:
-
-2) Common Mode:
+<p align="center">
+<img src="./img/Measurement_Setup.png" width="500" height="400"/>
+</p>
    
 ### Measurement results:
 
@@ -71,6 +72,28 @@ Common Mode:Power Line connected to filter output (reversed configuration):
 <img src="./img/internals_complete.jpg" width="400" height="400"/>
 <img src="./img/final_product.jpg" width="500" height="500"/>
 </p>
+
+It is important to note that the voltage at the junction of capacitors Cy (when not connected to Earth) is half of the power line voltage. This occurs because C4 and C5 form a voltage divider. As a result, you will measure approximately 219V RMS at this point, which is sufficient to activate a neon test probe. The capacitor values are chosen to ensure that the current flowing through your body when touching this point remains within safe limits (see calculations below). However, to eliminate any risk of exposure to potentially lethal voltages (e.g., if C4C malfunctions and the C4/C5 junction is not grounded), I used a safe, noise-free Earth connection.
+
+
+Power line voltage:
+
+$Up=310V$
+$Upp=2*Up=620V$
+$Urms=\frac{Upp}{2*\sqrt{2}} = 620/2.828 = 219.23V$
+
+Impedance of Cy at 50Hz frequency for Cy=2.2nF:
+
+$Xcy = \frac{1}{2*PI*f*C} = 1.45Mohm$
+
+Assuming the CY/CY junction is touched with a wet hand (with the body resistance in such a case estimated to be around 30 ohms - more realistic value would be 1kohm), the current flowing through the body can be calculated as follows, under the assumption that Rbody≪Xcy:
+
+$Irms = \frec{Urms}{Xcy}= \freq{219}{1.45*10^6} = 0.15mA$
+
+Maximum allowed values of capacitors Cy is defined in IEC 60384-14 and in case of consumer electronics can range between: 1-4.7nF.
+
+A current below 1 mA is generally barely perceptible, while currents exceeding 10 mA can be potentially lethal!
+
 
 ## References
 
