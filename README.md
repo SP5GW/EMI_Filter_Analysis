@@ -37,7 +37,7 @@ The main lessons learneded from this project are:
 ### Measurement setup:
 
 <p align="center">
-<img src="./img/Measurement_Setup.png" width="600" height="100"/>
+<img src="./img/Measurement_Setup.png" width="700" height="200"/>
 </p>
    
 ### Measurement results:
